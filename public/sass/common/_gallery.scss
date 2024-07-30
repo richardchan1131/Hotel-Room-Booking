@@ -1,0 +1,146 @@
+.g-gallery {
+    margin: 10px 0;
+    position: relative;
+    min-height: 75px;
+    .fotorama {
+        .fotorama__arr.fotorama__arr--prev {
+            left: 30px;
+            &:after {
+                content: '';
+                background: url(../../images/ico_pre.svg);
+            }
+        }
+        .fotorama__arr.fotorama__arr--next {
+            right: 30px;
+            &:after {
+                content: '';
+                background: url(../../images/ico_next.svg);
+            }
+        }
+        .fotorama__arr {
+            border-radius: 3px;
+            width: 40px;
+            height: 40px;
+            background: none;
+            background-color: rgba(26, 43, 72, 0.6);
+            &:after {
+                position: absolute;
+                left: 50%;
+                margin-left: -13px;
+                top: 7px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+        .fotorama__fullscreen-icon {
+            width: 40px;
+            height: 40px;
+            top: auto;
+            bottom: 30px;
+            right: 30px;
+            background: none;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                background: url(../../images/ico_full_3.svg);
+                left: 50%;
+                margin-left: -11px;
+                top: 7px;
+                z-index: 1;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(26, 43, 72, 0.5);
+                border-radius: 3px;
+            }
+        }
+    }
+    .social{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        .social-share {
+            display: inline-flex;
+            &:hover{
+                .share-wrapper {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+            .social-icon{
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: rgba(26, 43, 72, 0.7);
+                color: #fff;
+                font-size: 19px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 2px;
+                margin-right: 10px;
+            }
+            .share-wrapper {
+                visibility: hidden;
+                opacity: 0;
+                padding-left: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1;
+                padding-top: 5px;
+                transition: all 0.3s;
+                li {
+                    width: 40px;
+                    height: 40px;
+                    background: #FFF;
+                    border-radius: 50%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    margin-bottom: 5px;
+                    a {
+                        color: #1A2B48;
+                    }
+                }
+            }
+        }
+        .service-wishlist{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(26, 43, 72, 0.7);
+            color: #fff;
+            font-size: 19px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 2px;
+            &.active{
+                .fa{
+                    &:before{
+                        content: "\f004";
+                    }
+                }
+            }
+        }
+    }
+}

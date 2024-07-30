@@ -1,0 +1,61 @@
+.bc_start_chat{
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    color: #4b4f56;
+    padding: 3px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    &:hover{
+        background-color: #ebedf0;
+    }
+}
+.owner-info{
+    background: #FFF;
+    border-radius: 3px;
+    padding: 15px;
+    border: 1px solid #D7DCE3;
+    .media-left{
+        padding-right: 10px;
+        a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+
+        }
+    }
+    .avatar-text{
+        background: #1a2b47;
+        color: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: block;
+        text-align: center;
+        padding-top: 4px;
+        position: relative;
+        font-size: 29px;
+        top: 0;
+        text-decoration: none;
+    }
+    .media-heading{
+        font-weight: 500;
+        font-size: 14px;
+        color: #1a2b48;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        a{
+            color:inherit;
+        }
+    }
+    p{
+        margin-bottom: 5px;
+        color: #5E6D77;
+        font-size: 12px;
+    }
+}

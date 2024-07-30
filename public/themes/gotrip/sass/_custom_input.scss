@@ -1,0 +1,29 @@
+.form-input {
+    input,textarea,select{
+        &.has-value ~ label{
+            transform: translateY(-10px);
+        }
+        &:focus{
+            border-width: 1px!important;
+            outline: 1px solid #051036;
+        }
+    }
+    select{
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        padding: 0 15px;
+        padding-top: 25px;
+        min-height: 70px;
+        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        &:focus{
+            border: 1px solid #051036;
+            outline: 1px solid #051036;
+        }
+        &~label{
+            transform: translateY(-10px);
+        }
+    }
+}
+.form-control{
+    border: 1px solid #ced4da;
+}

@@ -1,0 +1,90 @@
+.bravo_wrap{
+    .mailchimp{
+        .bravo-subscribe-form{
+            position: relative;
+            .form-mess{
+                position: absolute;
+                bottom: -40px;
+            }
+            .button{
+                .fa-spinner{
+                    margin-left: 5px;
+                    display: none;
+                }
+            }
+            &.loading{
+                .button{
+                    .fa-spinner{
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &.style_4{
+            .footer_middle_area{
+                p{
+                    color: var(--color-white);
+                }
+            }
+        }
+        .menu-footer{
+            .menu__nav{
+                display: flex;
+                li{
+                    position: relative;
+                    a{
+                        cursor: pointer;
+                        padding: 0 10px;
+                    }
+                    >a{
+                        .icon{
+                            font-size: 7px;
+                        }
+                    }
+                    &:hover{
+                        >.subnav{
+                            opacity: 1;
+                            pointer-events: auto;
+                        }
+                    }
+                    .subnav{
+                        position: absolute;
+                        bottom: 100%;
+                        background-color: white;
+                        border-radius: 4px;
+                        color: var(--color-dark-1) !important;
+                        min-width: 240px;
+                        padding: 20px;
+                        box-shadow: 0px 10px 60px 0px #0510360d;
+                        opacity: 0;
+                        pointer-events: none;
+                        transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+                        >li{
+                            >a:hover{
+                                color: var(--color-blue-1);
+                                background-color: rgba(53, 84, 209, 0.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer.style_6{
+    .text-blue-1{
+        color: #FFF;
+    }
+    a{
+        transition: all 0.3s;
+    }
+    a:hover{
+        color: #FFF;
+        opacity: 0.7;
+    }
+    .text-light-1{
+        color: #FFF;
+    }
+}

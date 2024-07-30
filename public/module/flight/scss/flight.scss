@@ -1,0 +1,191 @@
+
+.modal-backdrop.show {
+    opacity: 0.7;
+}
+
+.bravo_wrap {
+    //Page search tour
+    .bravo_search_flight {
+        .bravo_banner {
+            background-color: #1a2b48;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 90px 0;
+            position: relative;
+            h1 {
+                font-size: 36px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                text-align: left;
+                margin: 0;
+            }
+            @media(max-width: 766px){
+                padding: 70px 0;
+                h1 {
+                    font-size: 28px;
+                }
+            }
+        }
+        .bravo_form_search {
+            margin-top: -50px;
+            position: relative;
+            margin-bottom: 50px;
+            @media(max-width: 766px){
+                margin-top: -30px;
+                margin-bottom:20px;
+            }
+        }
+        .bravo_filter {
+            border: 1px solid #D7DCE3;
+            border-radius: 3px;
+            margin-bottom: 30px;
+            .filter-title {
+                font-size: 16px;
+                color: #1A2B48;
+                margin-bottom: 5px;
+                margin-top: 30px;
+                font-weight: 500;
+                @media(max-width: 766px){
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+                }
+                &:before {
+                    content: '';
+                    width: 3px;
+                    height: 20px;
+                    background: #5191FA;
+                    float: left;
+                    position: relative;
+                    top: -2px;
+                    margin-right: 17px;
+                }
+            }
+            .g-filter-item {
+                border: none;
+                border-top: 1px solid #D7DCE3;
+                border-radius: 0px;
+                margin-bottom: 0px;
+                padding: 20px;
+                @media(max-width: 766px){
+                    padding: 15px 20px;
+                }
+                .hide{
+                    display: none;
+                }
+                .item-title {
+                    cursor: pointer;
+                    position: relative;
+                    .fa {
+                        font-size: 22px;
+                        color: #1A2B48;
+                        right: 0;
+                        top: 2px;
+                        position: absolute;
+                    }
+                    h4,h3 {
+                        font-size: 14px;
+                        color: #1A2B48;
+                        line-height: 23px;
+                        margin: 0;
+                        font-weight: 500;
+                    }
+                }
+                .item-content {
+                    margin-top: 20px;
+                    @media(max-width: 990px){
+                        display: none;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+
+                        }
+                    }
+                    .btn-more-item {
+                        font-size: 14px;
+                        color: #5191FA;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+                    .btn-apply-price-range {
+                        font-size: 14px;
+                        color: #5191FA;
+                        margin-top: 20px;
+                        font-weight: 600;
+                        padding: 0;
+                        text-decoration: none;
+                        outline: none;
+                    }
+                    .bravo-filter-price {
+                        .irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+                            font-size: 11px;
+                            background-color: #5191FA;
+                        }
+                        .irs--flat .irs-bar {
+                            top: 25px;
+                            height: 12px;
+                            background-color: #5191FA;
+                        }
+                        .irs--flat .irs-handle > i:first-child {
+                            background-color: #5191FA;
+                        }
+                        .irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+                            border-top-color: #5191FA;
+                        }
+                    }
+                }
+                .item-title.e-close {
+                    .fa {
+                        transform: rotate(180deg) !important;
+                    }
+                }
+            }
+        }
+        .bravo-list-item {
+            .topbar-search {
+                .text {
+                    font-size: 24px;
+                    color: #1A2B48;
+                    font-weight: normal;
+                    margin: 0;
+                }
+            }
+            .list-item {
+                margin-top: 15px;
+            }
+        }
+    }
+    #flightFormBookModal{
+        .modal-dialog{
+            max-width: 1000px;
+            .close{
+                position: absolute;
+                z-index: 2;
+                right: -20px;
+                background: #1A2B48;
+                width: 50px;
+                border-radius: 50%;
+                opacity: 1;
+                color: #fff;
+                top: -20px;
+                height: 50px;
+            }
+            .card-header{
+                padding: 20px 20px 15px;
+            }
+            .modal-body{
+                padding: 0;
+                .icon-loading{
+                    min-height: 300px;
+                    font-size: 80px;
+                }
+            }
+            .card-header{
+                img{
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+}

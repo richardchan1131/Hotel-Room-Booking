@@ -1,0 +1,50 @@
+9999999999s:1146:".masthead.-type-1 .masthead__bg::after {
+  background: linear-gradient(0deg, rgb(44 41 41 / 40%), rgb(44 41 41 / 40%));
+}
+.cardImage__content img{ 
+    max-width: 100%;
+    height: 90% !important;
+}
+.h-full {
+    height: 90% !important;
+}
+.mt-40 {
+    margin-top: 15px !important;
+}
+.section-bg__item.-w-1165 {
+    width: 100vw;
+}
+.tabs.-bookmark-2 .tabs__button.is-tab-el-active {
+    color: white !important;
+    background-color: #F8D448;
+}
+.section-bg__item.-w-1500 {
+    width: 1700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.masthead.-type-2 .masthead__tabs {
+    padding-top: 120px;
+}
+.header .header-menu .menu a{ font-size: 16px;
+     font-weight: 600;
+}
+.bg-dark-1 {
+    background-color: var(--color-dark-2) !important;
+}
+.bg-yellow-1 {
+    background-color: var(--color-light-2) !important;
+}
+.user__profile-plan{
+    display:none
+}
+.masthead.-type-3 .masthead__bg::after {
+    background-color: rgb(5 16 54 / 26%);
+}
+.text-60 {
+    font-size: var(--text-50) !important;
+}
+.bravo_wrap .gotrip_form_search .searchMenu-loc .js-results {
+  max-height:450px;
+  overflow: auto;
+}";

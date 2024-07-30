@@ -1,0 +1,7 @@
+$fontSizes: [16, 18, 20, 24,36];
+
+@each $size in $fontSizes {
+    .text-#{$size} {
+        font-size: $size + px
+    }
+}

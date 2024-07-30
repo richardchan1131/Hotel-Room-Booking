@@ -1,0 +1,16 @@
+.bravo_search_space{
+    .g-filter-item{
+        .item-content{
+            .row{
+                &.hide{
+                    display: none;
+                }
+            }
+            .btn-link{
+                text-decoration: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

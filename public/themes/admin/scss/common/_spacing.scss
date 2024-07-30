@@ -1,0 +1,17 @@
+$sizes: [18, 28];
+$maxWidth: [650];
+
+@each $size in $sizes {
+    .w-#{$size} {
+        width: $size + px
+    }
+    .h-#{$size} {
+        height: $size + px
+    }
+}
+
+@each $size in $maxWidth {
+    .max-w-#{$size} {
+        max-width: $size + px
+    }
+}

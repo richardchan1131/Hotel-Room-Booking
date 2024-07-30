@@ -1,0 +1,1385 @@
+.masthead__content .check-in-out {
+    position: absolute;
+    left: -15px;
+    bottom: 1px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.cardImage__leftBadge {
+    width: auto;
+    height: auto;
+}
+
+.align-baseline{
+    align-items: baseline;
+}
+
+.header_2 .dropdown > a {
+    color: #fff;
+}
+
+.list-star {
+    position: relative;
+    display: flex;
+    .booking-item-rating-stars {
+        padding: 0;
+        margin: 0;
+        li {
+            height: 14px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        li .fa {
+            font-size: 11px;
+        }
+    }
+
+    .booking-item-rating-stars-active {
+        position: absolute;
+        width: 0;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+}
+.shrink-0{
+    flex-shrink: 0;
+}
+.w-100{
+    width: 100% !important;
+}
+.position-relative{
+    position: relative;
+}
+.bravo-list-item{
+    .topbar-search{
+        border-bottom: 30px;
+        .control{
+            .item{
+                &:not(:first-child){
+                    margin-left: 5px;
+                    padding-left: 5px;
+                    border-left: solid 1px #a7a7a7;
+                }
+                .dropdown{
+                    .dropdown-toggle{
+                        padding: 3px 15px;
+                        border: solid 1px #ccc;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .list-service-item{
+        .cardImage__content{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.has-search-map{
+    .bravo_form_search_map{
+        .bravo_form{
+            @media (min-width: 992px){
+                padding-left: 0!important;
+            }
+            background: var(--color-light-2)!important;
+            width: auto;
+            border-radius: 4px;
+            .button-item{
+                .button{
+                    width: 60px;
+                    border-radius: 4px;
+                    @media (max-width: 992px){
+                        width: 100%;
+                    }
+                    .icon-search{
+                        margin: 0!important;
+                    }
+                    .text-search{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .halfMap__map{
+        #bravo_results_map{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            .infobox-item{
+                overflow: hidden;
+                border-radius: 4px;
+                .hotelsCard__image{
+                    border-radius: 0;
+                }
+                .hotelsCard__content{
+                    padding: 0 10px 10px 10px;
+                }
+            }
+        }
+    }
+}
+
+.bravo_detail{
+    .bravo_content{
+        .g-attributes{
+            .list-attributes{
+                margin: 0 -15px;
+                .item{
+                    flex: 0 0 calc(100%/4);
+                    max-width: calc(100%/4);
+                    padding: 7.5px 15px;
+                    @media (max-width: 1023px) {
+                        flex: 0 0 calc(100%/3);
+                        max-width: calc(100%/3);
+                    }
+                    @media (max-width: 655px) {
+                        flex: 0 0 calc(100%/2);
+                        max-width: calc(100%/2);
+                    }
+                    .img-responsive{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .review-list{
+        .review-item{
+            .avatar{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .review-form{
+        .review-items{
+            .item{
+                .rates{
+                    .fa{
+                        &.hovered,&.selected{
+                            color: var(--color-yellow-1);
+                            &:before{
+                                content: '\f005';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .form-input{
+            .invalid-feedback{
+                position: absolute;
+                bottom: -24px;
+            }
+        }
+    }
+    .bravo_single_book_wrap{
+        .searchMenu-guests{
+            .form-guest-search{
+                .input{
+                    input{
+                        max-width: 50px;
+                        text-align: center;
+                        &::-webkit-inner-spin-button,&::-webkit-outer-spin-button{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sale-price {
+    margin-right: 3px;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #c03!important;
+    font-weight: 400;
+}
+.bravo_wrap .bravo_user_profile .bravo-list-item .list-item .item-list{
+    background: #fff;
+}
+.bravo_wrap .bravo_user_profile .bravo-list-item .list-item .item-list .location,
+.bravo_wrap .bravo_user_profile .bravo-list-item .list-item .item-list .rate {
+    padding-bottom: 5px !important;
+}
+
+.bravo_wrap .bravo_user_profile {
+    .language-navigation{
+        margin-bottom: 20px;
+        ul{
+            border: none;
+            li{
+                margin: 0;
+                a{
+                    border: solid 1px #ccc;
+                    border-radius: 0;
+                    &.active{
+                        color: #fff;
+                        border: solid 1px #fa5636;
+                        background: #FA5636;
+                    }
+                    margin-right: 10px;
+                    background: #fff;
+                    color: #101010cc;
+                }
+            }
+        }
+    }
+    .form-add-service .nav-tabs {
+        background: #4452cf !important;
+    }
+    .form-control{
+        border: 1px solid #ced4da !important;
+    }
+    input[type=checkbox],input[type=radio]{
+        width: auto !important;
+        border: 1px solid #b4b9be !important;
+    }
+    .term-item{
+        margin-right: 10px;
+    }
+    .bravo-pagination{
+        .count-string{
+            float: none !important;
+            text-align: left;
+        }
+        .custom-pagination{
+            margin-top: 0 !important;
+        }
+    }
+
+    .booking-review{
+        .booking-review-title{
+            display: none;
+        }
+        .booking-review-content{
+            .review-section{
+                padding: 0;
+                border-bottom: 1px solid #EAEEF3;
+                &:last-child{
+                    border-bottom: 0px;
+                }
+                .service-info{
+                    display: none !important;
+                }
+            }
+            .service-info{
+                .service-name{
+                    a{
+                        color: #1A2B48;
+                        font-size: 16px;
+                        line-height: 25px;
+                        font-weight: 500;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .address{
+                    color: #5E6D77;
+                    margin-bottom: 0px;
+                }
+            }
+            .review-list{
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                li{
+                    margin-bottom: 13px;
+                    display: flex;
+                    justify-content: space-between;
+                    .val{
+                        color: #5E6D77;
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    &.no-flex{
+                        display: block;
+                    }
+                    ul{
+                        padding-left: 15px;
+                    }
+                    &.final-total{
+                        border-top: 1px solid #EAEEF3;
+                        padding-top: 10px;
+                        font-size: 19px;
+                        .label{
+                            font-weight: 500;
+                        }
+                        .val{
+                            font-weight: 500;
+                            color:#3490dc
+                        }
+                    }
+                }
+            }
+            .review-section{
+                ul{
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    li{
+                        display: flex;
+                        justify-content: space-between;
+
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid #DAE1E7;
+
+
+                        .val{
+                            color: #5E6D77;
+                        }
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        &.no-flex{
+                            display: block;
+                        }
+                        ul{
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.bravo_single_book {
+    .nav-enquiry{
+        padding: 10px;
+        display: flex;
+        background: #f7f7f7;
+        margin-top: 15px;
+        border-radius: 5px;
+        .enquiry-item{
+            flex: 0 0 50%;
+            text-align: center;
+            span{
+                color: #1a2b4e;
+                text-transform: uppercase;
+                font-weight: 500;
+                display: inline-block;
+                border-bottom: solid 1px transparent;
+                cursor: pointer;
+            }
+            &.active{
+                span{
+                    border-bottom: solid 1px  var(--color-blue-1);
+                    color:  var(--color-blue-1);
+                }
+            }
+        }
+    }
+}
+.bravo-booking-page{
+    .form-control{
+        border: 1px solid #ced4da;
+    }
+    .input-group-text{
+        border-radius:0 ;
+    }
+}
+.owner-info{
+    background: #FFF;
+    border-radius: 3px;
+    padding: 15px;
+    border: 1px solid #D7DCE3;
+    .media-left{
+        padding-right: 10px;
+        a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+
+        }
+    }
+    .avatar-text{
+        background: #1a2b47;
+        color: #fff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: block;
+        text-align: center;
+        padding-top: 4px;
+        position: relative;
+        font-size: 29px;
+        top: 0;
+        text-decoration: none;
+    }
+    .media-heading{
+        font-weight: 500;
+        font-size: 14px;
+        color: #1a2b48;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        a{
+            color:inherit;
+        }
+    }
+    p{
+        margin-bottom: 5px;
+        color: #5E6D77;
+        font-size: 12px;
+    }
+}
+.service-wishlist.active{
+    .button{
+        border-color: var(--color-blue-1);
+        background-color: var(--color-blue-1) !important;
+        color: white !important;
+    }
+}
+.bravo-list-car,.bravo-list-car-related{
+    .item-loop-gird-2{
+        .cardImage__content{
+            padding: 25px;
+            display: flex;
+            img{
+                eight: auto !important;
+                object-fit: contain;
+            }
+        }
+    }
+}
+// Class
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.bravo_search_tour .bravo_form_search_map .bravo_form,
+.bravo_search_car .bravo_form_search_map .bravo_form,
+.bravo_search_event .bravo_form_search_map .bravo_form,
+.bravo_search_boat .bravo_form_search_map .bravo_form
+{
+    background: none !important;
+    .button-item {
+        display: flex;
+        justify-content: end;
+    }
+}
+.bravo_search_space .bravo_form_search_map .bravo_form{
+    margin-top: 0 !important;
+    .searchMenu-guests__field{
+        left: auto;
+        right: 0;
+    }
+}
+
+.boat-map-form-search{
+    .button-grid{
+        grid-template-columns: 1fr 290px auto;
+    }
+}
+
+.bravo-location-service-list{
+    .loop-type-car{
+        .item-loop-gird-2{
+            .cardImage__content{
+                padding: 25px;
+                display: flex;
+                img{
+                    height: auto !important;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.text-dark-1-i{
+    color: var(--color-dark-1)!important;
+}
+.gotrip-overview{
+    p{
+        color: var(--color-dark-1);
+    }
+    h4{
+        font-weight: 500;
+        font-size: var(--text-16);
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    ul{
+        list-style: none;
+        li{
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
+}
+.bravo-news .sidebar-widget .sidebar-title h4, .bravo-news .sidebar-widget .sidebar-title h2{
+    font-weight: 600 !important;
+}
+.halfMap.bravo_search_car{
+    margin-top: 0;
+}
+
+.bravo_wrap{
+    .bravo_search{
+        &.halfMap{
+            .halfMap__content{
+                .gotrip_form_search{
+                    .button-item{
+                        flex: 0 0 60px;
+                        max-width: 60px;
+                        @media(max-width: 991px){
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .gotrip_form_search{
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 4px;
+            .button-item{
+                .button{
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    .gotrip_form_search{
+        display: flex;
+        .field-items{
+            display: flex;
+            flex: 1;
+            >.row{
+                >div{
+                    &:not(:last-child){
+                        border-right: 1px solid var(--color-border);
+                        @media(max-width: 991px){
+                            border-right: 0;
+                            border-bottom: 1px solid var(--color-border);
+                        }
+                    }
+                }
+            }
+        }
+        .button-item{
+            flex: 0 0 150px;
+            width: 100%;
+            max-width: 150px;
+            justify-content: end;
+            display: flex;
+            .button{
+                max-width: 150px;
+            }
+            @media(max-width: 991px){
+                max-width: 100%;
+                .button{
+                    max-width: 100%;
+                }
+            }
+        }
+        &.form-search-service-hotel{
+            .field-items{
+                >.row{
+                    >div{
+                        padding: 24px 30px!important;
+                    }
+                }
+            }
+            .button-item{
+                .mainSearch__submit{
+                    height: 100%!important;
+                    border-radius: 0;
+                }
+            }
+        }
+        &.form-search-sidebar{
+            flex-direction: column;
+            background: transparent!important;
+            .field-items{
+                >.row{
+                    //flex-direction: column;
+                    >div{
+                        align-self: normal!important;
+                        border-right: none;
+                        margin-bottom: 20px;
+                        background: #fff;
+                        width: 100%;
+                        padding: 10px 20px!important;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .button-item{
+                flex: 0 0 100%;
+                max-width: 100%;
+                .button{
+                    max-width: 100%;
+                }
+            }
+        }
+        @media(max-width: 991px){
+            flex-wrap: wrap;
+            .field-items, .button-item{
+                width: 100%;
+                flex: unset;
+            }
+        }
+    }
+    @media (max-width: 991px)
+    {
+        .halfMap__map {
+            height: 300px;
+        }
+    }
+}
+
+.bravo-review-score a.checked{
+    color: #FFF !important;
+}
+.cardImage__discounttBadge {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: auto;
+}
+.is_desktop{
+    display: block;
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+.is_mobile{
+    display: none;
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+@media (max-width: 1023px) {
+
+}
+.gotrip-form-search-grid{
+    background:  var(--color-light-2) !important;
+    .gotrip_form_search{
+        flex-wrap: wrap;
+        background: none !important;
+        padding: 20px !important;
+        .button-item{
+            max-width:none;
+            button{
+                width: 100%;
+                max-width:none;
+            }
+        }
+        .field-items{
+            flex: 0 0 100%;
+        }
+        .button-item{
+            flex: 0 0 100%;
+        }
+        .row > div{
+            flex: 0 0 100%;
+            border: none !important;
+            padding: 0 0 15px 0 !important;
+        }
+    }
+}
+.bravo_form_filter{
+    &.-is-active{
+        display: block !important;
+        background: white;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1100;
+        overflow-y: scroll;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.gotrip-map-list-items{
+    //height: 450px;
+    //overflow: auto;
+}
+.halfMap__content {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+.btn-apply-advances,
+.btn-apply-price-range{
+    width: auto;
+}
+.toggle-element.-dropdown{
+    min-width: 180px;
+}
+.c-pointer{
+    cursor: pointer;
+}
+.invalid-feedback.show{
+    display: block;
+}
+.bravo-subscribe-form .form-mess .text-success{
+    color: #008009;
+}
+.sidebar-checkbox .hide{
+    display: none;
+}
+.halfMap__content{
+    overflow-x: hidden;
+}
+.clear-loc{
+    right: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+}
+.has-val .clear-loc{
+    display: inline-block;
+}
+.searchMenu-loc.has-val .js-search{
+    padding-right: 20px;
+}
+.min-height-300{
+    min-height: 300px;
+}
+.text-success {
+    color: #28a745!important;
+}
+.text-danger {
+    color: #dc3545!important;
+}
+.dropdown-notifications{
+    button{
+        position: relative;
+        .notification-icon{
+            top: 2px;
+            right: 8px;
+            left: auto;
+        }
+    }
+    .dropdown-menu{
+        background-color: #FFF;
+        box-shadow: 0 0 10px rgba(0,0,0,0.16);
+        &.-is-active{
+            display: block;
+        }
+    }
+    @media(max-width: 767px){
+        .dropdown-menu-right{
+            right: -60px;
+        }
+    }
+}
+@media(min-width: 576px) {
+    #flightFormBookModal .modal-dialog {
+        max-width: 1000px;
+    }
+}
+.bravo_wrap #flightFormBookModal .modal-dialog .modal-body .icon-loading{
+    align-items: center;
+    justify-content: center;
+}
+#bravo_notify {
+    .media {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .panel {
+        background-color: #fff;
+        box-shadow: 0 0 0 1px rgb(63 63 68 / 5%), 0 1px 3px 0 rgb(63 63 68 / 15%);
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+    @media(max-width: 767px) {
+        .col-3, .col-9 {
+            width: 100%;
+        }
+    }
+}
+.gotrip-login-modal,.gotrip-register-modal{
+    .modal-header{
+        border-bottom: dashed 1px #ccc;
+    }
+}
+.bravo_detail_boat .cruiseSlider-slider .cruiseSlider__nav{
+    @media(max-width: 1023px) {
+        display: none;
+    }
+}
+.bravo_detail_location .location_banner{
+    .effect{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.3;
+        @media (max-width: 766px) {
+            background: #20347a;
+            opacity: 1;
+        }
+    }
+    img{
+        @media (max-width: 766px) {
+            display: none;
+        }
+    }
+    .text-banner{
+        @media (max-width: 766px) {
+            position: relative !important;
+            padding: 30px !important;
+            .text-50{
+                font-size: 32px !important;
+            }
+        }
+    }
+}
+@media(max-width: 767px){
+    .bravo_hotel_detail .hotel_list_rooms .room-item .roomGrid .roomGrid__header{
+        display: none;
+    }
+    .bravo_hotel_detail .hotel_list_rooms .room-item .roomGrid .roomGrid__grid{
+        display: block;
+    }
+    .hotel_rooms_form .form-search-rooms .form-search-row .g-button-submit{
+        padding: 20px;
+    }
+}
+.gotrip-banner .btn-group{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    display: inline-flex;
+    vertical-align: middle;
+    z-index: 1;
+}
+.gotrip-banner .btn-group .btn{
+    margin-left: 10px;
+    background: rgba(26,43,72,.5);
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 20px;
+}
+.gotrip-banner .btn-group .has-icon{
+    display: flex;
+    align-items: center;
+}
+.gotrip-banner .btn-group .btn .fa{
+    margin-right: 10px;
+}
+
+.video_popup_modal .modal .modal-dialog {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+    margin: -10px auto 0;
+}
+.video_popup_modal .modal .modal-content {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+.video_popup_modal .close{
+    float: right;
+}
+.video_popup_modal .embed-responsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.video_popup_modal .embed-responsive-16by9::before{
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+}
+.video_popup_modal .embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.review_upload_btn{
+    position: relative;
+}
+.helpText:after {
+    content: "\f067";
+    font-family: "FontAwesome";
+    font-size: 150%;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    border: 3px dashed gray;
+}
+.review_upload_file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+.review_upload_item {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+}
+.alert-text{
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+}
+.alert-text.danger{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.item-loop-gird-2 .cardImage__content{
+    padding: 25px;
+    img{
+        object-fit: contain;
+    }
+}
+.js-results .-link{
+    cursor: pointer;
+}
+.tabs.-pills-2 .tabs__controls .tabs__button.is-tab-el-active:hover{
+    color: #FFF !important;
+}
+.masthead.-type-9{
+    z-index: 1;
+}
+.count-display input[type=number]{
+    -moz-appearance:textfield;
+}
+.searchMenu-guests__field input[type=number]{
+    -moz-appearance:textfield;
+}
+.button{
+    cursor: pointer;
+}
+.bc-two-tactor-authentication{
+    padding: 100px 0;
+    .mb-4{
+        margin-bottom: 20px !important;
+    }
+    .form-group{
+        margin-bottom: 15px;
+    }
+    .form-control {
+        border: 1px solid #ced4da;
+    }
+    .btn-primary{
+        background-color: #3554D1;
+        padding:5px 25px;
+        border-radius: 5px;
+        color: white;
+    }
+    .text-md-right{
+        text-align: right;
+    }
+    .card-header{
+        color: #fff;
+        background-color: #20347a;
+    }
+}
+
+.bravo-form-search-all.carousel_v2{
+
+    .effect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 0;
+
+        .item {
+            width: 100%;
+            height: 100% !important;
+            background-position: center !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            @media (max-width: 768px) {
+                display: block;
+                .text-heading {
+                    padding-top: 80px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .owl-carousel, .owl-stage-outer, .owl-stage, .owl-item {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .owl-nav, .owl-dots {
+        display: none !important;
+    }
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    font-size: 0.875rem;
+    word-wrap: break-word;
+    opacity: 0;
+}
+
+.tooltip.show {
+    opacity: 0.9;
+}
+
+.tooltip .arrow {
+    position: absolute;
+    display: block;
+    width: 0.8rem;
+    height: 0.4rem;
+}
+
+.tooltip .arrow::before {
+    position: absolute;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+
+.bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
+    padding: 0.4rem 0;
+}
+
+.bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
+    bottom: 0;
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    top: 0;
+    border-width: 0.4rem 0.4rem 0;
+    border-top-color: #000;
+}
+
+.bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
+    padding: 0 0.4rem;
+}
+
+.bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow {
+    left: 0;
+    width: 0.4rem;
+    height: 0.8rem;
+}
+
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    right: 0;
+    border-width: 0.4rem 0.4rem 0.4rem 0;
+    border-right-color: #000;
+}
+
+.bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
+    padding: 0.4rem 0;
+}
+
+.bs-tooltip-bottom .arrow, .bs-tooltip-auto[x-placement^="bottom"] .arrow {
+    top: 0;
+}
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    bottom: 0;
+    border-width: 0 0.4rem 0.4rem;
+    border-bottom-color: #000;
+}
+
+.bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
+    padding: 0 0.4rem;
+}
+
+.bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^="left"] .arrow {
+    right: 0;
+    width: 0.4rem;
+    height: 0.8rem;
+}
+
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    left: 0;
+    border-width: 0.4rem 0 0.4rem 0.4rem;
+    border-left-color: #000;
+}
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 0.25rem;
+}
+.profile-summary {
+    border-radius: 5px;
+}
+.profile-summary .meta-info.style2 li i {
+    font-size: 16px !important;
+}
+.profile-summary .meta-info.style1 li:before {
+    top: 6px !important;
+}
+.bravo-news .blog-breadcrumb {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEEF3;
+    ul,ol,.ul {
+        list-style: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        background: #FFF;
+        li {
+            position: relative;
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+            z-index: 0;
+            a{
+                display: block;
+                font-weight: 500;
+                color: #1A2B48;
+                text-decoration: none;
+                line-height: 21px;
+            }
+            &.active {
+                color: #5E6D77;
+            }
+        }
+        li:first-child {
+            padding-left: 0;
+        }
+        li:not(:last-child):after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: -2px;
+            margin-top: -2px;
+            width: 4px;
+            height: 4px;
+            background: #EAEEF3;
+            z-index: 1;
+        }
+    }
+}
+.bravo-pagination .count-string {
+    color: #768090;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+.bravo-more-book-mobile{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 11;
+    display: none;
+    border-top: solid 1px #ddd;
+    line-height: 20px;
+    @media(max-width: 990px){
+        display: block;
+    }
+    .container{
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        height: 65px;
+        flex-wrap: wrap;
+    }
+    .left,.right{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .left{
+        .g-price {
+            .prefix {
+                color: #5E6D77;
+                display: inline-block;
+                i{
+                    font-size: 16px;
+                    color: #ffc107;
+                }
+            }
+            .fr_text{
+                font-size: 12px;
+            }
+            .price {
+                position: relative;
+                display: inline-block;
+                .text-price {
+                    font-size: 20px;
+                    color: #1A2B48;
+                    font-weight: 500;
+                }
+                .onsale {
+                    text-decoration: line-through;
+                    font-size: 16px;
+                    color: #cc0033 !important;
+                    font-weight: 400;
+                }
+            }
+            i{
+                font-size: 18px;
+            }
+        }
+        .service-review {
+            .list-star{
+                display: inline-block;
+                line-height: 13px;
+                position: relative;
+                .booking-item-rating-stars{
+                    padding: 0;
+                    margin: 0;
+                    width: 90px;
+                    &:before,&:after{
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    li {
+                        list-style: none;
+                        float: left;
+                        margin-right: 5px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        .fa {
+                            font-size: 15px;
+                            color: #FFDC00;
+                        }
+                    }
+                }
+                .booking-item-rating-stars-active{
+                    position: absolute;
+                    width: 0;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                }
+            }
+            .review {
+                position: relative;
+                top: -2px;
+                font-size: 13px;
+                color: #768092;
+                margin-left: 10px;
+                @media(max-width: 340px){
+                    display: none;
+                }
+            }
+        }
+    }
+    .right{
+        text-align: right;
+    }
+    .btn-primary{
+        padding: 8px 20px 6px;
+        color: #fff;
+    }
+}
+.booking_cookie_agreement {
+    background-color: #02071a;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    z-index: 999999 !important;
+    font-family: var(--title-font-family);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    p {
+        color: #ffffff;
+    }
+
+    a {
+        color: #EB6753;
+    }
+
+    .content-cookie {
+        flex: 1 1;
+    }
+
+    .save-cookie {
+        background-color: #EB6753;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        border: 1px solid var(--headings-color);
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,108 @@
+.smart-search, .input-search {
+    position: relative;
+
+    &:not(.normal-control) .parent_text,&:not(.normal-control) .form-control {
+        border: none;
+        box-shadow: none;
+        font-size: 16px;
+        position: relative;
+        left: 0 !important;
+        padding: 0 !important;
+        height: 25px;
+        background: transparent;
+
+        &[readonly] {
+            cursor: pointer;
+        }
+    }
+
+    .bravo-autocomplete {
+        &.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        position: absolute;
+        background: #fff;
+        padding: 0;
+        top: 100%;
+        margin-top: 35px;
+        left: 0;
+        border: solid 1px #dee2e6;
+        z-index: 20;
+        max-height: 500px;
+        overflow-y: auto;
+        right: -15px;
+        min-width: 500px;
+        border-radius: 5px;
+        @media(max-width: 1023px) {
+            margin-top: 10px;
+            border-radius: 0;
+            right: 0;
+            left: -55px;
+            background: #f1f1f1;
+        }
+
+        .item {
+            cursor: pointer;
+            padding: 10px 15px;
+            color: var(--color-dark-1);
+            &:nth-child(2n) {
+                background: #fff;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .h-line {
+                font-weight: 500;
+            }
+
+            i {
+                margin-right: 5px;
+                font-size: 16px;
+                position: relative;
+                top: 1px;
+                color: #828282;
+            }
+
+            &:hover {
+                background: #f5f4f7;
+            }
+        }
+
+        .message {
+            display: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #424242
+        }
+
+        &.on-message {
+            .list-item {
+                display: none;
+            }
+
+            .message {
+                display: block;
+            }
+        }
+    }
+    &.normal-control{
+        .form-control{
+            padding-right: 25px;
+        }
+        .bravo-autocomplete{
+            margin-top: 0px;
+        }
+        &:after{
+            color: #4b4b4b;
+            top: 23px;
+            right: 15px;
+        }
+    }
+}

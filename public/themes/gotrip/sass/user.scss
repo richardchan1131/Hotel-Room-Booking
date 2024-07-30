@@ -1,0 +1,52 @@
+body .daterangepicker {
+    width: auto;
+    .drp-calendar .calendar-table table.table-condensed thead tr:first-child th:not(.month) {
+        position: relative !important;
+    }
+    .drp-calendar .calendar-table thead tr:first-child th{
+        padding: 0;
+        border-bottom: none;
+        border-radius: 0;
+        margin: 0;
+    }
+    .drp-calendar .calendar-table tbody tr td.start-date {
+        border-left: none !important;
+    }
+    .drp-calendar .calendar-table tbody tr td.end-date {
+        border-right: none !important;
+    }
+    select.monthselect,
+    select.yearselect {
+        border-radius: 5px;
+        border: solid 1px #ccc;
+        padding: 2px 5px;
+    }
+}
+body .daterangepicker.show-ranges {
+    .drp-calendar.left {
+        margin-right: 20px !important;
+        margin-left: 20px;
+        padding-left: 20px !important;
+        @media (max-width: 1023px) {
+            margin-right: 0 !important;
+            margin-left: 0;
+            padding-left: 0 !important;
+            border: none;
+            margin-top: 20px;
+        }
+    }
+}
+body .daterangepicker .drp-calendar{
+    width: auto !important;
+}
+body .daterangepicker .calendar-table table.table-condensed tbody tr td.active,
+body .daterangepicker .drp-calendar .calendar-table table.table-condensed tbody tr td.active:hover {
+    color: #fff;
+}
+.bravo_wrap .bravo_user_profile .booking-history-manager .btn-info-booking {
+    color: #000;
+    width: 100%;
+}
+.bravo_wrap .bravo_user_profile .booking-history-manager .btn.btn-info-booking {
+    color: #fff;
+}

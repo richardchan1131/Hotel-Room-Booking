@@ -1,0 +1,20 @@
+{
+    "/module/user/css/user.css": "/module/user/css/user.css",
+    "/module/booking/css/checkout.css": "/module/booking/css/checkout.css",
+    "/css/notification.css": "/css/notification.css",
+    "/css/rtl.css": "/css/rtl.css",
+    "/css/contact.css": "/css/contact.css",
+    "/module/boat/css/boat.css": "/module/boat/css/boat.css",
+    "/module/flight/css/flight.css": "/module/flight/css/flight.css",
+    "/module/social/css/social.css": "/module/social/css/social.css",
+    "/module/event/css/event.css": "/module/event/css/event.css",
+    "/module/car/css/car.css": "/module/car/css/car.css",
+    "/module/location/css/location.css": "/module/location/css/location.css",
+    "/module/space/css/space.css": "/module/space/css/space.css",
+    "/module/media/css/browser.css": "/module/media/css/browser.css",
+    "/module/news/css/news.css": "/module/news/css/news.css",
+    "/module/hotel/css/hotel.css": "/module/hotel/css/hotel.css",
+    "/module/tour/css/tour.css": "/module/tour/css/tour.css",
+    "/module/user/css/profile.css": "/module/user/css/profile.css",
+    "/css/app.css": "/css/app.css"
+}

@@ -1,0 +1,125 @@
+.dashboard__sidebar{
+    a{
+        color: inherit;
+    }
+    .sidebar__item{
+        .children{
+            display: none;
+            &.opened{
+                display: block;
+            }
+        }
+    }
+}
+
+.footer.-dashboard{
+    p, a{
+        font-size: inherit;
+        color: inherit;
+    }
+    a:hover{
+        color: #0a58ca;
+    }
+    .dropdown{
+        >a{
+            font-weight: 500;
+            color: inherit;
+            text-decoration: underline;
+            font-size: var(--text-14);
+        }
+    }
+}
+
+.sidebar__user{
+    .logo{
+        text-align: center;
+        .avatar{
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+        }
+        .avatar-text{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            font-size: 40px;
+            font-weight: 400;
+            border-radius: 50%;
+            background-color: #f2f5f9;
+            margin: 0 auto 10px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .become-vendor{
+        display: inline-flex;
+        border-radius: 20px;
+    }
+}
+.button.-sm{
+    padding: 9px 24px;
+}
+.dashboard__sidebar{
+    padding-top: 40px;
+}
+
+.booking__history{
+    table tbody td{
+        a.btn, a:not([href]):not([tabindex]){
+            color: #FFF;
+        }
+    }
+}
+
+table.table-3 th,
+table.table-3 td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gotrip-bravo-pagination{
+    a{
+        color: #1A2B48;
+    }
+    .active > *{
+        color: #FFF;
+        background-color: #1A2B48;
+    }
+}
+
+.processing span,
+.unpaid span,
+.pending span{
+    background-color: #FFF8DD;
+    color: #FFC700;
+}
+
+.partial_payment span{
+    background-color: #E5F0FD;
+    color: #3554D1;
+}
+
+.paid span,
+.completed span,
+.confirmed span{
+    background-color: #EBFCEA;
+    color: #008009;
+}
+
+.cancelled span,
+.cancel span{
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+.fail span{
+    background-color: #FFF5F8;
+    color: #F1416C;
+}
+
+.draft span{
+    background-color: #F5F5F5;
+    color: #697488;
+}
